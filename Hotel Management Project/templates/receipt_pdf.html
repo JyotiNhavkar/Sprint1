@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+        .receipt-container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 320px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 8px #f1edede0;
+        }
+        .receipt-container h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .receipt-container p {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: hsl(0, 5%, 75%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="receipt-container">
+        <h2>Hotel AJ Receipt</h2>
+        <p><strong>Guest:</strong> {{ guest_first_name }} {{ guest_last_name }}</p>
+        <p><strong>Room:</strong> {{ room_number }}</p>
+        <p><strong>Check-in:</strong> {{ check_in_date }}</p>
+        <p><strong>Check-out:</strong> {{ check_out_date }}</p>
+        <p><strong>Total Amount Paid:</strong>Rs {{ total_amount }}</p>
+        <p><strong>Payment Method:</strong> Cash</p>
+        <div class="footer">
+            <p>Thank you for choosing our hotel!</p>
+        </div>
+    </div>
+
+</body>
+</html>

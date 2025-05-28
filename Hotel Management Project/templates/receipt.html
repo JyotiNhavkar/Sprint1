@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .receipt-container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .receipt-container h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .receipt-container p {
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <h2>Hotel Receipt</h2>
+        <p><strong>Guest:</strong> {{ guest_first_name }} {{ guest_last_name }}</p>
+        <p><strong>Room:</strong> {{ room_number }}</p>
+        <p><strong>Check-in:</strong> {{ check_in_date }}</p>
+        <p><strong>Check-out:</strong> {{ check_out_date }}</p>
+        <p><strong>Total Amount Paid:</strong> ₹{{ total_amount }}</p>
+        <p><strong>Payment Method:</strong> Cash</p>
+        <div class="footer">
+            <p>Thank you for choosing our hotel!</p>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hotel AJ</title>
+    <link rel="stylesheet" href="{% static 'aboutUs-styles.css' %}">
+  
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="" class="active">About</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="about-content">
+                <h1>About Our Hotel Management System</h1>
+                <p>Welcome to our Hotel Management System! We strive to provide a seamless and delightful experience for both our guests and staff.</p>
+                <p>Our system is designed to efficiently handle reservations, manage room inventory, streamline check-ins and check-outs, and ensure a top-notch experience for every guest.</p>
+                <p>With advanced features and user-friendly interfaces, we aim to elevate the hospitality experience and empower hotel management operations.</p>
+            <h2>Our Address</h2>
+                <p><strong>Hotel AJ</strong><br>
+                123 Serenity Lane,<br>
+                Oceanview District,<br>
+                Pune, Maharashtra 400001,<br>
+                India</p>
+            </div>
+            <div class="about-image">
+                <!-- Add an image related to your hotel management system -->
+                <img src="/static/peakpx3.jpg" >
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hotel AJ. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
